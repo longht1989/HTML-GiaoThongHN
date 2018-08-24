@@ -1,0 +1,190 @@
+/* ====================================
+   All region in project
+   ==================================== */
+
+// zone global style
+.zone {
+    margin-bottom: 40px;
+    &__title {
+        font-size: 18px;
+        line-height: 1.4;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        @include breakpoint(md) {
+            font-size: 24px;
+        }
+    }
+    &__content {
+        @include clearfix();
+    }
+    &--featured {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 24px 0 rgba(0, 0, 0, 0.20);
+        padding: 15px;
+    }
+    &--highlight {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-top: 1px solid #eee;
+    }
+    &__main-col {
+        @include breakpoint(md) {
+            width: 690px;
+            float: left;
+        }
+    }
+    &__aside-col {
+        @include breakpoint(md) {
+            width: 200px;
+            float: right;
+        }
+    }
+    &--normal {
+        .zone__content {
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0px 0px 24px 0 rgba(0, 0, 0, 0.20);
+        }
+        .story {
+            .story__title {
+                padding: 0 10px;
+            }
+            &+.story {
+                padding-top: 12px;
+                border-top: 1px solid #eee;
+            }
+        }
+    }
+}
+
+//cover
+.cover {
+    @include clearfix;
+    .cover__img {
+        @include breakpoint(md) {
+            width: 710px;
+            float: left;
+        }
+    }
+    .sponsor {
+        @include clearfix;
+        background: white;
+        @include breakpoint(md) {
+            width: 230px;
+            float: right;
+            background: transparent;
+        }
+        li {
+            width: 20%;
+            float: left;
+            padding: 8px;
+            @include breakpoint(md) {
+                height: 68px;
+                padding: 16px 0;
+                background-color: white;
+                float: none;
+                width: 100%;
+                .img-responsive {
+                    height: 100%;
+                    width: auto;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            &+li {
+                margin-top: 2px;
+            }
+        }
+    }
+}
+
+//breaking
+.breaking {
+    @include clearfix;
+    margin-bottom: 12px;
+    position: relative;
+    &__header {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        span {
+            color: $brand-danger;
+        }
+        @include breakpoint(md) {
+            float: left;
+            margin-top: 6px;
+        }
+    }
+    &__content {
+        float: left;
+    }
+    .slider {
+        &-wrap {
+            float: left;
+            margin-top: 5px;
+            .story {
+                margin-bottom: 0;
+            }
+        }
+        &__control {
+            float: left;
+            margin: 0px 16px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            @include breakpoint(md) {
+                position: static;
+            }
+        }
+    }
+    &_next,
+    &_prev {
+        position: relative;
+        font-size: 14px;
+        line-height: 1;
+        opacity: 0.4;
+        &:hover {
+            opacity: 1;
+        }
+        a {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+//latest listing
+.latest {
+    &-listing {
+        li {
+            &+li {
+                margin-top: 12px;
+                padding-top: 12px;
+                border-top: 1px solid #eee;
+            }
+        }
+    }
+}
+
+.event {
+    &__listing {
+        li {
+            border-radius: 9px;
+            overflow: hidden;
+            margin-top: 15px;
+            box-shadow: 0px 0px 24px 0 rgba(0, 0, 0, 0.20);
+        }
+    }
+}
+
+.qc {
+    @include clearfix();
+    margin-bottom: 20px;
+    text-align: center;
+}

@@ -1,0 +1,67 @@
+/* Search & ulti box */
+
+.search {
+    &-box {
+        padding: 15px 0 10px;
+        border-top: 1px solid #ddd;
+        margin-top: 15px;
+    }
+    &-wrap {
+        position: relative;
+        margin-bottom: 10px;
+        .form-control {
+            height: 35px;
+            font-size: 12px;
+        }
+        .fa-search {
+            cursor: pointer;
+            position: absolute;
+            right: 8px;
+            top: 9px;
+            font-size: 16px;
+            @include transition(all, 0.2, ease);
+            @include haf {
+                color: $brand-primary;
+            }
+        }
+    }
+}
+
+.hotkey {
+    font-size: 13px;
+    display: inline-block;
+    + .hotkey {
+        &::before {
+            content: '-';
+            padding: 0 3px;
+            display: inline;
+        }
+    }
+    &:hover {
+        &::before {
+            color: $brand-primary;
+        }
+    }
+    &-label {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+}
+
+.utility {
+    // margin-top: 10px;
+    @include font-size(12, 35);
+    display: inline-block;
+    margin-right: 10px;
+    .fa {
+        @include font-size(14, 24);
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: $brand-primary;
+        color: white;
+        text-align: center;
+        margin-right: 5px;
+    }
+}

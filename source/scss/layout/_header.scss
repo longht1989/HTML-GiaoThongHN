@@ -1,0 +1,205 @@
+/* ====================================   Header's style   ==================================== */
+
+#m-site-header {
+    padding: 16px 0;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .14);
+    margin-bottom: 20px;
+    .site-wrap {
+        position: relative;
+    }
+    .logo {
+        width: 200px;
+    }
+    .fa-navicon {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        font-size: 24px;
+        color: #555;
+        @include transition(all, 0.2, ease);
+        &.is-active {
+            color: $brand-primary;
+            background: #f0f0f0;
+            padding: 18px 10px;
+            top: -18px;
+            right: 0px;
+        }
+    }
+    @include breakpoint(md) {
+        display: none;
+    }
+}
+
+.mobile {
+    &__menu {
+        background: #f0f0f0;
+        margin: -20px 0 20px;
+        padding: 10px;
+        display: none;
+    }
+    &__search {
+        position: relative;
+        margin-bottom: 10px;
+        .fa-search {
+            position: absolute;
+            right: 2px;
+            top: 0px;
+            padding: 8px;
+            font-size: 18px;
+            @include transition(all, 0.2, ease);
+            @include haf {
+                color: $brand-primary;
+            }
+        }
+    }
+    &__cate-listing {
+        li {
+            @include font-size(18, 22);
+            margin: 7px 0;
+            a {
+                &::before {
+                    content: '•';
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+                display: block;
+                @extend .link-primary;
+            }
+        }
+    }
+}
+
+.site-header {
+    display: none;
+    @include breakpoint(md) {
+        display: block;
+    }
+    &__topbar {
+        @include clearfix();
+        text-align: center;
+        background-color: $body-bg;
+        font-size: 14px;
+        line-height: 35px;
+        z-index: 5;
+        color: $brand-success;
+        .fa {
+            transform: rotate(-42deg);
+        }
+        a {
+            color: $brand-success;
+            margin-left: 5px;
+            &:hover {
+                text-decoration: underline;
+            }
+            &+a {
+                &::before {
+                    content: "-";
+                    display: inline;
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+    &__search {
+        float: right;
+        position: relative;
+        width: 200px;
+        .form-control {
+            height: 25px;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+        .fa-search {
+            cursor: pointer;
+            position: absolute;
+            right: 4px;
+            top: 9px;
+            font-size: 16px;
+            @include transition(all, 0.2, ease);
+            @include haf {
+                color: $brand-primary;
+            }
+        }
+    }
+    &__content {
+        padding: 5px 0;
+        background-color: white;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.10);
+        .logo {
+            width: 290px;
+            height: auto;
+            display: inline-block;
+            margin-top: 12px;
+        }
+    }
+    &__nav {
+        background: $brand-primary;
+        &--sub {
+            background: $brand-success;
+        }
+    }
+}
+
+.navigator {
+    @include clearfix();
+    font-size: 14px;
+    line-height: 35px;
+    .site-header__nav--sub & {
+        font-size: 12px;
+        line-height: 28px;
+    }
+    >li {
+        float: left;
+        position: relative;
+        margin-right: 1px;
+        a {
+            display: block;
+            padding: 0 10px;
+            @include transition(all, 0.2, ease);
+            text-transform: uppercase;
+            color: white;
+            &:hover {
+                background-color: #eee;
+                color: $brand-primary;
+            }
+        }
+        &:hover {
+            .navigator__child {
+                left: auto;
+            }
+            .navigator__search {
+                right: 0;
+            }
+        }
+        &.is-active {
+            a {
+                background-color: #eee;
+                color: $brand-primary;
+            }
+        }
+    }
+    &__child {
+        position: absolute;
+        top: 100%;
+        left: -999em;
+        width: 200px;
+        z-index: 2;
+        @include has-shadow();
+        >li {
+            a {
+                background: #eee;
+                color: $brand-primary !important;
+                &:hover {
+                    background: #ddd;
+                }
+            }
+        }
+    }
+    .tools {
+        float: right;
+        a {
+            display: inline-block;
+        }
+    }
+}
