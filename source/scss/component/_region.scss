@@ -71,31 +71,20 @@
     }
     .sponsor {
         @include clearfix;
-        background: white;
         @include breakpoint(md) {
-            width: 230px;
-            float: right;
-            background: transparent;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
         }
         li {
             width: 20%;
             float: left;
-            padding: 8px;
-            @include breakpoint(md) {
-                height: 68px;
-                padding: 16px 0;
-                background-color: white;
-                float: none;
-                width: 100%;
-                .img-responsive {
-                    height: 100%;
-                    width: auto;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-            }
-            &+li {
-                margin-top: 2px;
+            padding: 8px 24px;
+            line-height: 40px;
+            img {
+                height: auto;
+                max-width: 100%;
+                vertical-align: middle;
             }
         }
     }
