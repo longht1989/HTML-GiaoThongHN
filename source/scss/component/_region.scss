@@ -63,6 +63,8 @@
 //cover
 .cover {
     @include clearfix;
+    overflow-x: auto;
+    width: 100%;
     .cover__img {
         @include breakpoint(md) {
             width: 710px;
@@ -71,20 +73,30 @@
     }
     .sponsor {
         @include clearfix;
+        min-width: 1024px;
+        margin-bottom: 20px;
         @include breakpoint(md) {
+            min-width: initial;
             max-width: 90%;
             margin-left: auto;
             margin-right: auto;
+            margin-bottom: 0;
         }
         li {
-            width: 20%;
             float: left;
             padding: 8px 24px;
-            line-height: 40px;
             img {
-                height: auto;
-                max-width: 100%;
-                vertical-align: middle;
+                height: 40px;
+                width: auto;
+            }
+            @include breakpoint(md) {
+                width: 20%;
+                line-height: 40px;
+                img {
+                    height: auto;
+                    max-width: 100%;
+                    vertical-align: middle;
+                }
             }
         }
     }

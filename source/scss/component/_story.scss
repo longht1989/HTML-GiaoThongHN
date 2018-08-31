@@ -93,16 +93,25 @@
     &--video {
         .story__thumb {
             position: relative;
-            &::after {
-                content: '';
+            a {
                 display: block;
-                position: absolute;
-                width: 48px;
-                height: 48px;
-                top: 50%;
-                left: 50%;
-                background: url(../img/play-button.png) left top no-repeat;
-                background-size: 100%;
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 48px;
+                    height: 48px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: url(../img/play-button.png) left top no-repeat;
+                    background-size: 100%;
+                    z-index: 2;
+                    @include breakpoint(md) {
+                        width: 76px;
+                        height: 76px;
+                    }
+                }
             }
         }
     }
