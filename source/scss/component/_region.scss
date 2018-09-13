@@ -14,6 +14,11 @@
         @include breakpoint(md) {
             font-size: 24px;
         }
+        &--sub {
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
     }
     &__content {
         @include clearfix();
@@ -55,6 +60,20 @@
             &+.story {
                 padding-top: 12px;
                 border-top: 1px solid #eee;
+            }
+        }
+        .sponsor {
+            padding: 20px 40px;
+            li {
+                .img-responsive {
+                    margin: 0 auto;
+                    max-width: 60%;
+                }
+                &+li {
+                    margin-top: 15px;
+                    padding-top: 15px;
+                    border-top: 1px solid #eee;
+                }
             }
         }
     }
@@ -175,11 +194,11 @@
 
 .event {
     &__listing {
+        padding: 20px;
         li {
-            border-radius: 9px;
-            overflow: hidden;
-            margin-top: 15px;
-            box-shadow: 0px 0px 24px 0 rgba(0, 0, 0, 0.20);
+            &+li {
+                margin-top: 10px;
+            }
         }
     }
 }
