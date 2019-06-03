@@ -4,16 +4,20 @@
     @include clearfix;
     margin-bottom: 12px;
     position: relative;
+
     &__thumb {
         margin-bottom: 7px;
         overflow: hidden;
         position: relative;
+
         img {
             @include transition(all, 0.2, linear);
+
             &::after {
                 @include transition(all, 0.4, ease);
             }
         }
+
         a {
             &::after {
                 @include transition(all, 0.4, ease);
@@ -28,33 +32,40 @@
                 opacity: 0;
             }
         }
+
         &:hover {
             a {
                 &::after {
                     opacity: 0.3;
                 }
             }
+
             img {
                 transform: scale(1.03);
             }
         }
     }
+
     &__title {
         font-size: 16px;
         line-height: 1.4; // font-weight: bold;
     }
+
     &__meta {
         color: #999;
         margin-top: 7px;
         margin-bottom: 5px;
         @include font-size(12, 16);
     }
+
     &__summary {
         color: #555;
         @include font-size(13, 18);
     }
+
     &__footer {
         margin-top: 16px;
+
         .story {
             .story__title {
                 font-size: 12px;
@@ -63,21 +74,25 @@
             }
         }
     }
+
     &--highlight {
         .story__title {
             font-size: 24px;
             line-height: 1.4;
             font-weight: bold;
         }
+
         @include breakpoint(xs) {
             padding-bottom: 12px;
             border-bottom: 1px solid #ddd;
         }
+
         @include breakpoint(768px, 1023px) {
             padding-bottom: 12px;
             border-bottom: 1px solid #ddd;
         }
     }
+
     &--featured {
         .story__title {
             font-size: 24px;
@@ -85,16 +100,20 @@
             font-weight: bold;
         }
     }
+
     &--bold {
         .story__title {
             font-weight: bold;
         }
     }
+
     &--video {
         .story__thumb {
             position: relative;
+
             a {
                 display: block;
+
                 &::before {
                     content: '';
                     display: block;
@@ -107,6 +126,7 @@
                     background: url(../img/play-button.png) left top no-repeat;
                     background-size: 100%;
                     z-index: 2;
+
                     @include breakpoint(md) {
                         width: 76px;
                         height: 76px;
@@ -115,16 +135,42 @@
             }
         }
     }
+
     &--horizontal {
-        @include last-child-y;
         .story__thumb {
             // width: 80px;
             // height: 60px;
             float: left;
-            margin: 0 10px 0 0;
+            margin: 0 10px 0 0px;
+        }
+
+        .story__header {
+            overflow: hidden;
+        }
+
+        &.mobile {
+            @media only screen and (max-width: 1023px) {
+                .story__thumb {
+                    margin-left: 10px;
+                }
+
+                .story__title {
+                    .zone--normal & {
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            @media only screen and (min-width: 1024px) {
+                .story__thumb {
+                    display: none;
+                }
+            }
         }
     }
+
     .breaking & {
+
         .story__title,
         .story__meta {
             float: left;

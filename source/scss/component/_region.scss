@@ -5,47 +5,63 @@
 // zone global style
 .zone {
     margin-bottom: 40px;
+
     &__title {
         font-size: 18px;
         line-height: 1.4;
         font-weight: bold;
         margin-bottom: 10px;
         text-transform: uppercase;
+
         @include breakpoint(md) {
             font-size: 24px;
         }
+
         &--sub {
             font-size: 18px;
             text-transform: uppercase;
             margin-bottom: 10px;
         }
+
+        a {
+            color: $brand-primary;
+            &:hover{
+                color: darken($brand-primary, 10%);
+            }
+        }
     }
+
     &__content {
         @include clearfix();
     }
+
     &--featured {
         background-color: white;
         border-radius: 10px;
         box-shadow: 0px 0px 24px 0 rgba(0, 0, 0, 0.20);
         padding: 15px;
     }
+
     &--highlight {
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
         border-top: 1px solid #eee;
     }
+
     &__main-col {
         @include breakpoint(md) {
             width: 690px;
             float: left;
         }
     }
+
     &__aside-col {
         @include breakpoint(md) {
             width: 200px;
             float: right;
         }
     }
+
     &--normal {
         .zone__content {
             border-radius: 8px;
@@ -53,22 +69,27 @@
             background-color: white;
             box-shadow: 0px 0px 24px 0 rgba(0, 0, 0, 0.20);
         }
+
         .story {
             .story__title {
                 padding: 0 10px;
             }
+
             &+.story {
                 padding-top: 12px;
                 border-top: 1px solid #eee;
             }
         }
+
         .sponsor {
             padding: 20px 40px;
+
             li {
                 .img-responsive {
                     margin: 0 auto;
                     max-width: 60%;
                 }
+
                 &+li {
                     margin-top: 15px;
                     padding-top: 15px;
@@ -84,16 +105,19 @@
     @include clearfix;
     overflow-x: auto;
     width: 100%;
+
     .cover__img {
         @include breakpoint(md) {
             width: 710px;
             float: left;
         }
     }
+
     .sponsor {
         @include clearfix;
         min-width: 1024px;
         margin-bottom: 20px;
+
         @include breakpoint(md) {
             min-width: initial;
             max-width: 90%;
@@ -101,16 +125,20 @@
             margin-right: auto;
             margin-bottom: 0;
         }
+
         li {
             float: left;
             padding: 8px 24px;
+
             img {
                 height: 40px;
                 width: auto;
             }
+
             @include breakpoint(md) {
                 width: 20%;
                 line-height: 40px;
+
                 img {
                     height: auto;
                     max-width: 100%;
@@ -126,49 +154,60 @@
     @include clearfix;
     margin-bottom: 12px;
     position: relative;
+
     &__header {
         font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 10px;
+
         span {
             color: $brand-danger;
         }
+
         @include breakpoint(md) {
             float: left;
             margin-top: 6px;
         }
     }
+
     &__content {
         float: left;
     }
+
     .slider {
         &-wrap {
             float: left;
             margin-top: 5px;
+
             .story {
                 margin-bottom: 0;
             }
         }
+
         &__control {
             float: left;
             margin: 0px 16px;
             position: absolute;
             top: 0;
             right: 0;
+
             @include breakpoint(md) {
                 position: static;
             }
         }
     }
+
     &_next,
     &_prev {
         position: relative;
         font-size: 14px;
         line-height: 1;
         opacity: 0.4;
+
         &:hover {
             opacity: 1;
         }
+
         a {
             position: absolute;
             top: 0;
@@ -195,6 +234,7 @@
 .event {
     &__listing {
         padding: 20px;
+
         li {
             &+li {
                 margin-top: 10px;
