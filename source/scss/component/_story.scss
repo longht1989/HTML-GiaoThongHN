@@ -53,9 +53,12 @@
 
     &__meta {
         color: #999;
-        margin-top: 7px;
-        margin-bottom: 5px;
+        margin-top: 5px;
         @include font-size(12, 16);
+    }
+
+    &__cate {
+        margin-right: 8px;
     }
 
     &__summary {
@@ -152,6 +155,10 @@
             @media only screen and (max-width: 1023px) {
                 .story__thumb {
                     margin-left: 10px;
+
+                    .zone--highlight & {
+                        margin-left: 0;
+                    }
                 }
 
                 .story__title {
