@@ -25,7 +25,8 @@
 
         a {
             color: $brand-primary;
-            &:hover{
+
+            &:hover {
                 color: darken($brand-primary, 10%);
             }
         }
@@ -73,6 +74,12 @@
         .story {
             .story__title {
                 padding: 0 10px;
+            }
+
+            .story__meta {
+                .story--bold & {
+                    padding: 0 10px;
+                }
             }
 
             &+.story {
