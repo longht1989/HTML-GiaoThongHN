@@ -325,3 +325,34 @@
 #m-site-header .fa-navicon.is-active {
     top: -14px;
 }
+
+@media only screen and (min-width: 375px) {
+    #m-site-header .logo {
+        width: 300px;
+    }
+
+    #m-site-header .fa-navicon {
+        top: 8px;
+    }
+
+    #m-site-header .fa-navicon.is-active {
+        top: -18px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+}
+@media only screen and (min-width: 414px) {
+    #m-site-header .logo {
+        width: 320px;
+    }
+
+    #m-site-header .fa-navicon {
+        top: 10px;
+    }
+
+    #m-site-header .fa-navicon.is-active {
+        top: -16px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+}
