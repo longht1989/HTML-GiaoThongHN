@@ -1,0 +1,327 @@
+﻿.zone {
+    margin-bottom: 20px;
+}
+
+.form-secure {
+    float: left;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.form-secure .form-control {
+    float: left;
+    width: 100px;
+    margin-right: 15px;
+}
+
+#abody .contentimg {
+    margin: 0 auto;
+}
+
+#swipebox-title {
+    width: 800px;
+    background: rgba(0, 0, 0, 0.34);
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+}
+
+#swipebox-bottom-bar,
+#swipebox-top-bar {
+    background: none;
+}
+
+#swipebox-top-bar {
+    color: white !important;
+    font-size: 15px;
+    line-height: 25px;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-top: 10px;
+}
+
+#swipebox-arrows {
+    width: 96%;
+    max-width: inherit;
+}
+
+#swipebox-prev,
+#swipebox-next {
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 1);
+}
+
+#swipebox-bottom-bar {
+    top: 50%;
+}
+
+
+#abody img {
+    max-width: 100%;
+}
+
+#abody p {
+    padding-bottom: 10px;
+}
+
+
+.article-avatar-desc {
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.info-exchange ul li:nth-child(3) .description {
+    margin-top: 15px;
+}
+
+.content_video {
+    text-align: center !important;
+    max-width: 650px;
+    overflow: hidden;
+}
+
+.frm-cmt .info {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.modal-comment .frm-cmt .frm-cmt-group input[type="button"]:hover {
+    background: #B21818;
+}
+
+.modal-comment .frm-cmt .frm-cmt-group input[type="button"] {
+    border: none;
+    cursor: pointer;
+    padding: 7px 35px;
+    border-radius: 3px;
+    background: #bb1919;
+    color: #fff;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.popups .bClose>span {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popups .box-wiget {
+    margin-top: 5px;
+}
+
+.popups .box-wiget .scroll_thongke {
+    margin-bottom: 5px;
+}
+
+.popups .box-wiget .scroll_thongke .info_result {
+    margin: 5px 0;
+}
+
+.popups .box-wiget .scroll_thongke .info_result>div {
+    float: left;
+    margin-right: 5px;
+}
+
+.vote-result h1 a.logo {
+    background: url('../images/ico-sprites.png') no-repeat 0 0;
+    width: 250px;
+    height: 79px;
+    display: inline-block;
+}
+
+.modal-question .group-form input[id="btn-post-question"] {
+    margin-left: -25px;
+    border-radius: 3px;
+    border: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    background: #bb1919;
+    padding: 7px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.livestream {}
+
+.livestream .events {
+    border-top: 1px solid #ccc;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.livestream .events li {
+    padding: 0;
+    margin: 0 0 8px 0;
+    list-style: none;
+    box-shadow: 0px 2px 0px -1px #ECECEC;
+    overflow: hidden;
+}
+
+#livestream .events li .type {
+    background-image: none;
+    background-position: 50% top;
+    background-repeat: no-repeat;
+    background-size: 32px auto;
+    border-radius: 5px;
+    display: block;
+    height: 48px;
+    margin: 15px auto;
+    overflow: hidden;
+    text-indent: -999px;
+    width: 48px;
+}
+
+.livestream .events li .event-content {
+    padding: 0px 10px 0px 64px;
+}
+
+.livestream .events li .event-content>.inner {
+    padding-left: 10px;
+    border-left: 1px solid transparent;
+}
+
+.livestream .events li .event-content>.inner:hover {
+    border-left: 1px solid #0C8240;
+}
+
+.livestream .events li .event-content .date-time {
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    display: block;
+    width: 100%;
+    color: #940000;
+    font-size: 0.9em;
+}
+
+.livestream .events li .event-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.livestream .events li .event-content iframe {
+    max-width: 100%;
+}
+
+.livestream .events li .event-meta {
+    width: 64px;
+    float: left;
+    font-size: 24px;
+    text-align: center;
+}
+
+.livestream .events .fig {
+    clear: both;
+    display: block;
+}
+
+#livestream .events li.football_goal .type {
+    background-image: url("../Images/commentary/football_goal.png");
+}
+
+#livestream .events li.football_corner .type {
+    background-image: url("../Images/commentary/football_corner.png");
+}
+
+#livestream .events li.football_yellowcard .type {
+    background-image: url("../Images/commentary/football_yellocard.png");
+}
+
+#livestream .events li.football_redcard .type {
+    background-image: url("../Images/commentary/football_redcard.png");
+}
+
+#livestream .events li.football_change .type {
+    background-image: url("../Images/commentary/football_change.png");
+}
+
+#livestream .events li.football_start .type {
+    background-image: url("../Images/commentary/football_start.png");
+}
+
+#livestream .events li.football_map .type {
+    background-image: url("../Images/commentary/football_map.png");
+}
+
+#livestream .events li.football_stadium .type {
+    background-image: url("../Images/commentary/football_stadium.png");
+}
+
+#livestream .events li.football_time .type {
+    background-image: url("../Images/commentary/football_time.png");
+}
+
+#livestream .events li.football_stop .type {
+    background-image: url("../Images/commentary/football_stop.png");
+}
+
+#livestream .events li.phone .type {
+    background-image: url("../Images/commentary/phone.png");
+}
+
+#livestream .events li.comment .type {
+    background-image: url("../Images/commentary/comment.png");
+}
+
+#livestream .events li.quotation .type {
+    background-image: url("../Images/commentary/quotation.png");
+}
+
+#livestream .events li.facebook .type {
+    background-image: url("../Images/commentary/facebook.png");
+}
+
+#livestream .events li.twitter .type {
+    background-image: url("../Images/commentary/twitter.jpg");
+}
+
+#livestream .events li.mail .type {
+    background-image: url("../Images/commentary/mail.png");
+}
+
+#livestream .events li.video .type {
+    background-image: url("../Images/commentary/video.png");
+}
+
+#livestream .events li.picture .type {
+    background-image: url("../Images/commentary/picture.png");
+}
+
+#livestream .events li.medal_bronze .type {
+    background-image: url("../Images/commentary/medal_bronze.png");
+}
+
+#livestream .events li.medal_silver .type {
+    background-image: url("../Images/commentary/medal_silver.png");
+}
+
+#livestream .events li.mdeal_gold .type {
+    background-image: url("../Images/commentary/medal_gold.png");
+}
+
+@media only screen and (min-width: 1024px) {
+    .story .story__meta {
+        display: none;
+    }
+
+}
+
+.story--bold .story__meta {
+    padding: 0 10px;
+}
+
+/*fix logo width in mobile*/
+#m-site-header .logo {
+    width: 240px;
+}
+
+#m-site-header .fa-navicon {
+    top: 4px;
+}
+
+#m-site-header .fa-navicon.is-active {
+    top: -14px;
+}
