@@ -14,8 +14,13 @@
     margin-right: 15px;
 }
 
-#abody .contentimg {
+.contentimg {
     margin: 0 auto;
+}
+
+.contentimg td em {
+    display: block;
+    padding: 10px;
 }
 
 #swipebox-title {
@@ -307,6 +312,9 @@
         display: none;
     }
 
+    #m-site-header+.qc.site-wrap {
+        display: none;
+    }
 }
 
 .story--bold .story__meta {
@@ -341,6 +349,7 @@
         padding-bottom: 26px;
     }
 }
+
 @media only screen and (min-width: 414px) {
     #m-site-header .logo {
         width: 320px;
@@ -355,4 +364,17 @@
         padding-top: 26px;
         padding-bottom: 26px;
     }
+}
+
+.simplebanner {
+    margin: 0 auto;
+}
+
+.simplebanner img {
+    max-width: 100% !important;
+}
+
+.main-article .article-content .aside-img em,
+.main-article .article-content .aside-img i {
+    position: static;
 }
