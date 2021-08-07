@@ -378,3 +378,17 @@
 .main-article .article-content .aside-img i {
     position: static;
 }
+
+@media only screen and (min-width: 1024px) {
+    .main-article .article-content .aside-img {
+        max-width: 340px;
+    }
+
+    .main-article .article-content .aside-img.pull-right {
+        margin-left: 10px;
+    }
+
+    .main-article .article-content .aside-img.pull-left {
+        margin-right: 10px;
+    }
+}
