@@ -374,6 +374,7 @@
     max-width: 100% !important;
 }
 
+<<<<<<< Updated upstream
 .main-article .article-content .aside-img em,
 .main-article .article-content .aside-img i {
     position: static;
@@ -390,5 +391,19 @@
 
     .main-article .article-content .aside-img.pull-left {
         margin-right: 10px;
+=======
+/*responsive for large desktop*/
+@media only screen and (min-width: 1440px) {
+    .site-wrap {
+        width: 1180px;
+    }
+
+    .zone__main-col {
+        width: 760px;
+    }
+
+    .zone__aside-col {
+        width: 370px
+>>>>>>> Stashed changes
     }
 }
